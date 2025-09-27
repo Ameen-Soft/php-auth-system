@@ -20,7 +20,11 @@ if(isset($_POST['login'])){
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['user_role'] = $user['role'];
 
-            header("Location: ../index.php");
+            if($user['role'] === 'admin'){
+                header("Location: ../dashboard.php");
+            } else {
+                header("Location: ../index.php");
+            }
             exit();
         } else {
             die("Incorrect password. <a href='../login.php'>Go back</a>");
