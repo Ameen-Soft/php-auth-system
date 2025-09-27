@@ -82,3 +82,21 @@ p a {
 p a:hover {
     text-decoration: underline;
 }
+
+.welcome-box {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.welcome-box h1 {
+    margin-bottom: 20px;
+}
+.welcome-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+.welcome-box a:hover {
+    text-decoration: underline;
+}
